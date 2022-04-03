@@ -1,0 +1,15 @@
+version: '3'
+services:
+  web:
+    build: ./node-js
+    command: >
+      sh -c "cd app &&
+             npm run start"
+    ports:
+      - 8000:8000
+      - 36535:36535
+      - 33419:33419
+      - 43895:43895
+    volumes:
+      - ./node-js/app/src:/app/src
+      - ./node-js/app/dist:/app/dist
