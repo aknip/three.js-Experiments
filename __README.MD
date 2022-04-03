@@ -41,6 +41,9 @@ ACCESS VIA BASH:
 docker-compose exec web bash
 
 
+## III. GITPOD DEVELOPMENT
+
+Start with: https://gitpod.io/#https://github.com/aknip/three.js-Experiments
 
 
 ## NOTES:
