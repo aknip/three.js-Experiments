@@ -2,6 +2,7 @@
 # three.js with PARCEL JS
 
 
+test
 
 ## I. LOCAL DEVELOPMENT WITH PARCEL (WITHOUT DOCKER)
 
