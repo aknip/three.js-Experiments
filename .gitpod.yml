@@ -4,3 +4,7 @@ tasks:
 
   - name: Parcel -g
     init: npm install parcel -g
+
+  - name: Start
+    command: cd node-js/app && npm install
+    openMode: split-right
