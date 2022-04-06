@@ -5,19 +5,19 @@ import {
   Vector2,
   Color,
   Vector3,
-} from "../third_party/three.module.js";
-import { curl, generateNoiseFunction } from "../modules/curl.js";
-import { MeshLine, MeshLineMaterial } from "../modules/MeshLine.js";
-import { Easings } from "../modules/easings.js";
-import { parabola, randomInRange } from "../modules/Maf.js";
+} from "./third_party/three.module.js";
+import { curl, generateNoiseFunction } from "./modules/curl.js";
+import { MeshLine, MeshLineMaterial } from "./modules/MeshLine.js";
+import { Easings } from "./modules/easings.js";
+import { parabola, randomInRange } from "./modules/Maf.js";
 import {
   warm,
   natural,
   natural2,
   circus,
   seaside,
-} from "../modules/palettes.js";
-import { GradientLinear } from "../modules/gradient-linear.js";
+} from "./modules/palettes.js";
+import { GradientLinear } from "./modules/gradient-linear.js";
 
 const gradient = new GradientLinear(natural);
 

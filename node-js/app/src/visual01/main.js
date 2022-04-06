@@ -5,7 +5,7 @@ import {
   camera,
   resize,
   getControls,
-} from "../modules/renderer.js";
+} from "./modules/renderer.js";
 
 import { Trail } from "./trail.js";
 import { Post } from "./post.js";

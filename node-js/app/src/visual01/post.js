@@ -6,15 +6,15 @@ import {
   ClampToEdgeWrapping,
   Vector2,
   GLSL3,
-} from "../third_party/three.module.js";
-import { getFBO } from "../modules/fbo.js";
-import { shader as orthoVertexShader } from "../shaders/ortho.js";
-import { ShaderPass } from "../modules/ShaderPass.js";
-import { shader as vignette } from "../shaders/vignette.js";
-import { shader as noise } from "../shaders/noise.js";
-import { shader as screen } from "../shaders/screen.js";
-import { shader as rgbShift } from "../shaders/rgb-shift.js";
-import { BloomPass } from "../modules/bloomPass.js";
+} from "./third_party/three.module.js";
+import { getFBO } from "./modules/fbo.js";
+import { shader as orthoVertexShader } from "./shaders/ortho.js";
+import { ShaderPass } from "./modules/ShaderPass.js";
+import { shader as vignette } from "./shaders/vignette.js";
+import { shader as noise } from "./shaders/noise.js";
+import { shader as screen } from "./shaders/screen.js";
+import { shader as rgbShift } from "./shaders/rgb-shift.js";
+import { BloomPass } from "./modules/bloomPass.js";
 
 const finalFragmentShader = `
 precision highp float;
