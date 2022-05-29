@@ -1,5 +1,5 @@
 
-# three.js with PARCEL JS - This is the template branch
+# three.js with PARCEL JS - This is MAIN
 
 ## Branches:
 - template: Empty template
