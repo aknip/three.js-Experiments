@@ -1,9 +1,12 @@
 
-# three.js with PARCEL JS
+# three.js with PARCEL JS - This is the template branch
+
+## Branches:
+- template: Empty template
+- main: rotating thing
 
 
-
-## I. LOCAL DEVELOPMENT WITH PARCEL (WITHOUT DOCKER)
+## I. Local development (without Docker)
 
 ### INITIAL SETUP & INSTALL:
 npm install -g parcel
@@ -19,7 +22,7 @@ npm run build
 
 
 
-## II. LOCAL DEVELOPLENT WITH DOCKER (AND PARCEL)
+## II. Local Development (with Docker)
 
 ### INITIAL SETUP & INSTALL:
 docker-compose up --build
@@ -41,7 +44,7 @@ ACCESS VIA BASH:
 docker-compose exec web bash
 
 
-## III. GITPOD DEVELOPMENT
+## III. Gitpod Development
 
 Start with: https://gitpod.io/#https://github.com/aknip/three.js-Experiments
 
