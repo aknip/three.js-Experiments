@@ -1,6 +1,6 @@
 tasks:
   - name: Open files
-    command: gp open README.md && gp open node-js/app/src/visual01/index.html
+    command: gp open README.md && gp open node-js/app/src/project-name/index.html
 
   - name: Parcel -g
     init: npm install parcel -g

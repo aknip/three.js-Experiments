@@ -2,8 +2,8 @@
   "name": "three.js - Parcel",
   "version": "1.0.0",
   "scripts": {
-    "start": "parcel ./src/visual01/index.html -p 8000 --no-source-maps",
-    "build": "rm -r ./dist && parcel build ./src/visual01/index.html  --no-source-maps"
+    "start": "parcel ./src/project-name/index.html -p 8000 --no-source-maps",
+    "build": "rm -r ./dist && parcel build ./src/project-name/index.html  --no-source-maps"
   },
   "targets": {
     "browser": {
