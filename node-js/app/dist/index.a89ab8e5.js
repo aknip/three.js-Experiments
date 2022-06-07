@@ -516,52 +516,23 @@ function hmrAcceptRun(bundle, id) {
 },{}],"ckJ3t":[function(require,module,exports) {
 var _threeModuleJs = require("./third_party/three.module.js");
 var _orbitControlsJs = require("./third_party/OrbitControls.js");
-/**
- * Base
- */ // Canvas
+// Canvas
 const canvas = document.querySelector('canvas.webgl');
+// Sizes
+const sizes = {
+    width: window.innerWidth,
+    height: window.innerHeight
+};
 // Scene
 const scene = new _threeModuleJs.Scene();
-/**
- * Object
- */ const geometry = new _threeModuleJs.BoxGeometry(1, 1, 1);
+// Object
+const geometry = new _threeModuleJs.BoxGeometry(1, 1, 1);
 const material = new _threeModuleJs.MeshBasicMaterial({
     color: 16711680
 });
 const mesh = new _threeModuleJs.Mesh(geometry, material);
 scene.add(mesh);
-/**
- * Sizes
- */ const sizes = {
-    width: window.innerWidth,
-    height: window.innerHeight
-};
-window.addEventListener('resize', ()=>{
-    // Update sizes
-    sizes.width = window.innerWidth;
-    sizes.height = window.innerHeight;
-    // Update camera
-    camera.aspect = sizes.width / sizes.height;
-    camera.updateProjectionMatrix();
-    // Update renderer
-    renderer.setSize(sizes.width, sizes.height);
-    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
-});
-/**
- * Fullscreen
- */ window.addEventListener('dblclick', ()=>{
-    const fullscreenElement = document.fullscreenElement || document.webkitFullscreenElement;
-    if (!fullscreenElement) {
-        if (canvas.requestFullscreen) canvas.requestFullscreen();
-        else if (canvas.webkitRequestFullscreen) canvas.webkitRequestFullscreen();
-    } else {
-        if (document.exitFullscreen) document.exitFullscreen();
-        else if (document.webkitExitFullscreen) document.webkitExitFullscreen();
-    }
-});
-/**
- * Camera
- */ // Base camera
+// Base camera
 const camera = new _threeModuleJs.PerspectiveCamera(75, sizes.width / sizes.height, 0.1, 100);
 camera.position.z = 3;
 scene.add(camera);
@@ -587,6 +558,29 @@ const tick = ()=>{
     // Call tick again on the next frame
     window.requestAnimationFrame(tick);
 };
+window.addEventListener('resize', ()=>{
+    // Update sizes
+    sizes.width = window.innerWidth;
+    sizes.height = window.innerHeight;
+    // Update camera
+    camera.aspect = sizes.width / sizes.height;
+    camera.updateProjectionMatrix();
+    // Update renderer
+    renderer.setSize(sizes.width, sizes.height);
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+});
+/**
+ * Fullscreen
+ */ window.addEventListener('dblclick', ()=>{
+    const fullscreenElement = document.fullscreenElement || document.webkitFullscreenElement;
+    if (!fullscreenElement) {
+        if (canvas.requestFullscreen) canvas.requestFullscreen();
+        else if (canvas.webkitRequestFullscreen) canvas.webkitRequestFullscreen();
+    } else {
+        if (document.exitFullscreen) document.exitFullscreen();
+        else if (document.webkitExitFullscreen) document.webkitExitFullscreen();
+    }
+});
 tick();
 
 },{"./third_party/three.module.js":"5SKCg","./third_party/OrbitControls.js":"8Hq0x"}],"5SKCg":[function(require,module,exports) {
