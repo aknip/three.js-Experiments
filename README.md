@@ -1,5 +1,7 @@
 
-# three.js with PARCEL JS - This is MAIN
+# three.js with PARCEL JS - This is the template branch
+
+- three version 135dev
 
 ## Branches:
 - template: Empty template
@@ -46,7 +48,9 @@ docker-compose exec web bash
 
 ## III. Gitpod Development
 
-Start with: https://gitpod.io/#https://github.com/aknip/three.js-Experiments
+Start with: 
+- Main: https://gitpod.io/#https://github.com/aknip/three.js-Experiments
+- Template: https://gitpod.io/#https://github.com/aknip/three.js-Experiments/tree/template
 
 
 ## NOTES:
